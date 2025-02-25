@@ -1,4 +1,5 @@
-def filter_message(commit):
-    if b"fake commit" in commit.message:
-        return b"Updated mission logs"
-    return commit.message
+# msg_filter.py
+import random
+messages = [b"Secured drop point", b"Analyzed signal noise", b"Patched comms relay", b"Logged recon data"]
+commit.message = random.choice(messages) if b"fake commit" in commit.message else commit.message
+return commit.message
